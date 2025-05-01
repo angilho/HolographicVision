@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>홀로그램 도안</title>
+  <defs>
+    <style>
+      .cut-line { stroke: #000000; stroke-width: 2; }
+      .fold-line { stroke: #990000; stroke-width: 1; stroke-dasharray: 5,5; }
+      .dimension { font-family: Arial; font-size: 14px; fill: #666666; }
+      .instruction { font-family: Arial; font-size: 16px; fill: #333333; }
+      .title { font-family: Arial; font-size: 24px; fill: #000000; font-weight: bold; }
+      .korean { font-family: Arial, 'Malgun Gothic'; font-size: 18px; fill: #000000; }
+      .poly-transparent { fill: rgba(0, 102, 255, 0.05); }
+    </style>
+  </defs>
+  <g>
+    <!-- Title and Instructions -->
+    <text x="400" y="60" class="title" text-anchor="middle">홀로그램 피라미드 도안</text>
+    <text x="400" y="90" class="instruction" text-anchor="middle">투명한 종이나 OHP 필름에 인쇄한 후, 실선을 따라 자르고 점선을 따라 접으세요</text>
+    
+    <!-- Main pyramid shape - based on the attached image -->
+    <g transform="translate(200, 150)">
+      <!-- Main shape outline -->
+      <g class="poly-transparent">
+        <!-- Center small square -->
+        <rect x="195" y="195" width="10" height="10" />
+        
+        <!-- Four triangular sections -->
+        <!-- Top Triangle -->
+        <polygon points="200,200 200,100 300,0 100,0" />
+        
+        <!-- Left Triangle -->
+        <polygon points="200,200 100,200 0,300 0,100" />
+        
+        <!-- Bottom Triangle -->
+        <polygon points="200,200 200,300 100,400 300,400" />
+        
+        <!-- Right Triangle -->
+        <polygon points="200,200 300,200 400,100 400,300" />
+      </g>
+      
+      <!-- Cut lines for the shape -->
+      <!-- Top Triangle -->
+      <line x1="200" y1="100" x2="300" y2="0" class="cut-line" />
+      <line x1="200" y1="100" x2="100" y2="0" class="cut-line" />
+      <line x1="100" y1="0" x2="300" y2="0" class="cut-line" />
+      
+      <!-- Left Triangle -->
+      <line x1="100" y1="200" x2="0" y2="300" class="cut-line" />
+      <line x1="100" y1="200" x2="0" y2="100" class="cut-line" />
+      <line x1="0" y1="100" x2="0" y2="300" class="cut-line" />
+      
+      <!-- Bottom Triangle -->
+      <line x1="200" y1="300" x2="300" y2="400" class="cut-line" />
+      <line x1="200" y1="300" x2="100" y2="400" class="cut-line" />
+      <line x1="100" y1="400" x2="300" y2="400" class="cut-line" />
+      
+      <!-- Right Triangle -->
+      <line x1="300" y1="200" x2="400" y2="300" class="cut-line" />
+      <line x1="300" y1="200" x2="400" y2="100" class="cut-line" />
+      <line x1="400" y1="100" x2="400" y2="300" class="cut-line" />
+      
+      <!-- Fold lines - connecting to center -->
+      <line x1="200" y1="200" x2="200" y2="100" class="fold-line" />
+      <line x1="200" y1="200" x2="100" y2="200" class="fold-line" />
+      <line x1="200" y1="200" x2="200" y2="300" class="fold-line" />
+      <line x1="200" y1="200" x2="300" y2="200" class="fold-line" />
+    </g>
+    
+    <!-- Instructions for assembly -->
+    <g transform="translate(0, 600)">
+      <text x="400" y="50" class="instruction" text-anchor="middle">조립방법:</text>
+      <text x="400" y="80" class="instruction" text-anchor="middle">1. 실선을 따라 자르고, 점선을 따라 접어 피라미드 형태를 만드세요.</text>
+      <text x="400" y="110" class="instruction" text-anchor="middle">2. 중앙의 작은 사각형을 꼭짓점으로 하여 각 삼각형을 위로 접어 세웁니다.</text>
+      <text x="400" y="140" class="instruction" text-anchor="middle">3. 피라미드의 넓은 면이 바닥에 놓이고, 좁은 면이 위를 향하도록 배치하세요.</text>
+      <text x="400" y="170" class="instruction" text-anchor="middle">4. 스마트폰 위에 올려놓고 홀로그램 영상을 재생하세요.</text>
+    </g>
+  </g>
+</svg>
